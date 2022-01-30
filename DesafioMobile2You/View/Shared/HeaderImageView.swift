@@ -10,8 +10,8 @@ import SwiftUI
 struct HeaderImageView: View {
     var headerImage: Image
     
-    init(urlImage: String) {
-        self.headerImage = Image(uiImage: urlImage.loadUIImage())
+    init(posterPath: String) {
+        self.headerImage = Image(uiImage: "https://image.tmdb.org/t/p/original\(posterPath)".loadUIImage())
             .resizable()
     }
     
@@ -46,6 +46,6 @@ struct HeaderImageView: View {
 
 struct HeaderImageView_Previews: PreviewProvider {
     static var previews: some View {
-        HeaderImageView(urlImage: "https://image.tmdb.org/t/p/original/xRyINp9KfMLVjRiO5nCsoRDdvvF.jpg")
+        HeaderImageView(posterPath: "/xRyINp9KfMLVjRiO5nCsoRDdvvF.jpg")
     }
 }

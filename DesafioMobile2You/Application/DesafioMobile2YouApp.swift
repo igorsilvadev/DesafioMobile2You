@@ -11,7 +11,7 @@ import SwiftUI
 struct DesafioMobile2YouApp: App {
     var body: some Scene {
         WindowGroup {
-            MovieDetailsView()
+            MovieDetailsView(viewModel: MovieDetailsViewModel(withId: 550))
                 .preferredColorScheme(.dark)
         }
     }
