@@ -10,6 +10,11 @@
 		2303890427A5A51C004DC980 /* MovieDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2303890327A5A51C004DC980 /* MovieDetailsViewModel.swift */; };
 		2303890827A5A598004DC980 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2303890727A5A598004DC980 /* Movie.swift */; };
 		2303890B27A5A5E6004DC980 /* MovieAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2303890A27A5A5E6004DC980 /* MovieAPI.swift */; };
+		2303891327A5D729004DC980 /* String+LoadUIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2303891227A5D729004DC980 /* String+LoadUIImage.swift */; };
+		2303891727A5E514004DC980 /* HeaderImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2303891627A5E514004DC980 /* HeaderImageView.swift */; };
+		2303891A27A5EB5F004DC980 /* MovieInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2303891927A5EB5F004DC980 /* MovieInfoView.swift */; };
+		2303891D27A6FB2A004DC980 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2303891C27A6FB2A004DC980 /* GradientView.swift */; };
+		2303891F27A6FC0C004DC980 /* ListRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2303891E27A6FC0C004DC980 /* ListRowView.swift */; };
 		2358615427A5909B008985D9 /* DesafioMobile2YouApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2358615327A5909B008985D9 /* DesafioMobile2YouApp.swift */; };
 		2358615627A5909B008985D9 /* MovieDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2358615527A5909B008985D9 /* MovieDetailsView.swift */; };
 		2358615827A5909D008985D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2358615727A5909D008985D9 /* Assets.xcassets */; };
@@ -38,6 +43,11 @@
 		2303890327A5A51C004DC980 /* MovieDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailsViewModel.swift; sourceTree = "<group>"; };
 		2303890727A5A598004DC980 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 		2303890A27A5A5E6004DC980 /* MovieAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieAPI.swift; sourceTree = "<group>"; };
+		2303891227A5D729004DC980 /* String+LoadUIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+LoadUIImage.swift"; sourceTree = "<group>"; };
+		2303891627A5E514004DC980 /* HeaderImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderImageView.swift; sourceTree = "<group>"; };
+		2303891927A5EB5F004DC980 /* MovieInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieInfoView.swift; sourceTree = "<group>"; };
+		2303891C27A6FB2A004DC980 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		2303891E27A6FC0C004DC980 /* ListRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRowView.swift; sourceTree = "<group>"; };
 		2358615027A5909B008985D9 /* DesafioMobile2You.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DesafioMobile2You.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2358615327A5909B008985D9 /* DesafioMobile2YouApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesafioMobile2YouApp.swift; sourceTree = "<group>"; };
 		2358615527A5909B008985D9 /* MovieDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailsView.swift; sourceTree = "<group>"; };
@@ -85,7 +95,8 @@
 		2303890027A59D0C004DC980 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				2358615527A5909B008985D9 /* MovieDetailsView.swift */,
+				2303891B27A6C4B9004DC980 /* MovieDetails */,
+				2303891827A5EB36004DC980 /* Shared */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -114,6 +125,33 @@
 			path = Network;
 			sourceTree = "<group>";
 		};
+		2303890F27A5D0F0004DC980 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				2303891227A5D729004DC980 /* String+LoadUIImage.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		2303891827A5EB36004DC980 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				2303891627A5E514004DC980 /* HeaderImageView.swift */,
+				2303891927A5EB5F004DC980 /* MovieInfoView.swift */,
+				2303891C27A6FB2A004DC980 /* GradientView.swift */,
+				2303891E27A6FC0C004DC980 /* ListRowView.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		2303891B27A6C4B9004DC980 /* MovieDetails */ = {
+			isa = PBXGroup;
+			children = (
+				2358615527A5909B008985D9 /* MovieDetailsView.swift */,
+			);
+			path = MovieDetails;
+			sourceTree = "<group>";
+		};
 		2358614727A5909B008985D9 = {
 			isa = PBXGroup;
 			children = (
@@ -136,6 +174,7 @@
 		2358615227A5909B008985D9 /* DesafioMobile2You */ = {
 			isa = PBXGroup;
 			children = (
+				2303890F27A5D0F0004DC980 /* Extensions */,
 				2303890927A5A5B6004DC980 /* Network */,
 				2303890627A5A58B004DC980 /* Model */,
 				2303890227A5A4E6004DC980 /* ViewModel */,
@@ -297,8 +336,13 @@
 				2358615627A5909B008985D9 /* MovieDetailsView.swift in Sources */,
 				2358615427A5909B008985D9 /* DesafioMobile2YouApp.swift in Sources */,
 				2303890827A5A598004DC980 /* Movie.swift in Sources */,
+				2303891727A5E514004DC980 /* HeaderImageView.swift in Sources */,
+				2303891F27A6FC0C004DC980 /* ListRowView.swift in Sources */,
 				2303890427A5A51C004DC980 /* MovieDetailsViewModel.swift in Sources */,
+				2303891A27A5EB5F004DC980 /* MovieInfoView.swift in Sources */,
+				2303891327A5D729004DC980 /* String+LoadUIImage.swift in Sources */,
 				2303890B27A5A5E6004DC980 /* MovieAPI.swift in Sources */,
+				2303891D27A6FB2A004DC980 /* GradientView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
