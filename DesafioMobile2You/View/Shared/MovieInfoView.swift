@@ -10,12 +10,16 @@ import SwiftUI
 struct MovieInfoView: View {
     
     @State var isFavorite = false
+    var title: String
+    var voteCount: Int
+    var popularity: Double
+    
     
     var body: some View {
         VStack(spacing: 15){
             HStack {
                 //MARK: Movie Title
-                Text("The Very Best Of Johnny Depp")
+                Text(title)
                     .font(.system(size: 30, weight: .bold, design: .rounded))
                     .frame(maxWidth: .infinity, alignment: .leading)
                     .lineLimit(3)
@@ -32,12 +36,12 @@ struct MovieInfoView: View {
             HStack {
                 //Likes
                 Image(systemName: "suit.heart.fill")
-                Text("1.2K Likes")
+                Text("\(voteCount) Likes")
                     .font(.system(size: 14))
                 //Popularity
                 Image(systemName: "play.tv.fill")
                     .padding(.leading)
-                Text("100.000 Views")
+                Text("\(popularity) Views")
                     .font(.system(size: 14))
                 Spacer()
             }
@@ -47,6 +51,6 @@ struct MovieInfoView: View {
 
 struct MovieInfoView_Previews: PreviewProvider {
     static var previews: some View {
-        MovieInfoView()
+        MovieInfoView(title: "The Very Best Of Johnny Depp", voteCount: 1200, popularity: 100.000)
     }
 }

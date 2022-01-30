@@ -8,25 +8,33 @@
 import SwiftUI
 
 struct ListRowView: View {
-    var posterImage: Image
+    var imagePoster: Image
+    var title: String
+    var year: String
+    var genres: String
     
-    init(urlImage: String) {
-        self.posterImage = Image(uiImage: urlImage.loadUIImage())
+    init (image: Image, title: String, year: String, genres: String) {
+        self.imagePoster = image
+        self.title = title
+        self.year = year
+        self.genres = genres
     }
+    
     
     var body: some View {
         HStack{
             //MARK: Movie Image
-            posterImage
+            imagePoster
                 .resizable()
                 .frame(width: 50)
             //MARK: Title, Year, Genres
             VStack(alignment: .leading){
-                Text("Edward Scissorhands")
+                Text(title)
                     .bold()
                 HStack {
-                    Text("1990")
-                    Text("Drama, Fantasy")
+                    Text(year)
+                    Text(genres)
+                        .lineLimit(1)
                 }
                 .font(.subheadline)
             }
@@ -40,6 +48,6 @@ struct ListRowView: View {
 
 struct ListCellView_Previews: PreviewProvider {
     static var previews: some View {
-        ListRowView(urlImage:  "https://image.tmdb.org/t/p/original/xRyINp9KfMLVjRiO5nCsoRDdvvF.jpg")
+        ListRowView(image: Image(uiImage: "https://image.tmdb.org/t/p/original/pB8BM7pdSp6B6Ih7QZ4DrQ3PmJK.jpg".loadUIImage()), title: "Fight Club", year: "1999", genres: "Drama")
     }
 }
