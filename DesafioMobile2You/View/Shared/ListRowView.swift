@@ -8,26 +8,25 @@
 import SwiftUI
 
 struct ListRowView: View {
-    var imagePoster: Image
+    var posterPath: String
     var title: String
     var year: String
     var genres: String
-
-    
-    init (posterPath: String, title: String, year: String, genres: String) {
-        self.imagePoster = Image(uiImage: "https://image.tmdb.org/t/p/original\(posterPath)".loadUIImage())
-        self.title = title
-        self.year = year
-        self.genres = genres
-    }
     
     
     var body: some View {
         HStack{
             //MARK: Movie Image
-            imagePoster
-                .resizable()
-                .frame(width: 60)
+            AsyncImage(url: URL(string: "https://image.tmdb.org/t/p/original\(self.posterPath)")) { imagePoster in
+                imagePoster
+                    .resizable()
+                    .frame(width: 60)
+            } placeholder: {
+               ProgressView()
+                    .progressViewStyle(.circular)
+            }
+            
+            
             //MARK: Title, Year, Genres
             VStack(alignment: .leading){
                 Text(title)
