@@ -1,7 +1,7 @@
 
 # Desafio Mobile2You
 
-Replicação do layout da tela de detalhe dos filmes do app TodoMovies
+Replicação do layout da tela de detalhe dos filmes do app TodoMovies4
 
 
 ## Observações 
