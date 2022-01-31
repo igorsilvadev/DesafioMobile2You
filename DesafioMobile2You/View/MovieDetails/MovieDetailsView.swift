@@ -10,7 +10,7 @@ import SwiftUI
 struct MovieDetailsView: View {
     
     @StateObject var viewModel: MovieDetailsViewModel
-  
+    
     var body: some View {
         ScrollView (showsIndicators: false){
             //MARK: HEADER
@@ -22,9 +22,11 @@ struct MovieDetailsView: View {
             ForEach(viewModel.similarMovies ?? []) { movie in
                 ListRowView(posterPath: movie.posterPath ?? "", title: movie.title, year: String(movie.date.prefix(4)), genres: viewModel.getFormattedGenres(ids: movie.genres))
                 Divider()
+                    .foregroundColor(.gray)
+                    .opacity(0.5)
             }
             .padding([.top, .leading], 10)
-       
+            
         }
         .edgesIgnoringSafeArea(.top)
     }
