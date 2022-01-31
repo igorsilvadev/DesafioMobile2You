@@ -6,7 +6,18 @@
 //
 
 import Foundation
+import SwiftUI
 
-struct Movie {
+struct Movie: Decodable {
+    let id: Int
+    let title: String
+    let popularity: Double
+    let voteCount: Int
+    let date: String
+    let posterPath: String?
+    let genres: [Genre]
     
 }
+
+
+

@@ -10,22 +10,26 @@
 		2303890427A5A51C004DC980 /* MovieDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2303890327A5A51C004DC980 /* MovieDetailsViewModel.swift */; };
 		2303890827A5A598004DC980 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2303890727A5A598004DC980 /* Movie.swift */; };
 		2303890B27A5A5E6004DC980 /* MovieAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2303890A27A5A5E6004DC980 /* MovieAPI.swift */; };
+		2303891727A5E514004DC980 /* HeaderImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2303891627A5E514004DC980 /* HeaderImageView.swift */; };
+		2303891A27A5EB5F004DC980 /* MovieInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2303891927A5EB5F004DC980 /* MovieInfoView.swift */; };
+		2303891D27A6FB2A004DC980 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2303891C27A6FB2A004DC980 /* GradientView.swift */; };
+		2303891F27A6FC0C004DC980 /* ListRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2303891E27A6FC0C004DC980 /* ListRowView.swift */; };
+		2303892227A70D6C004DC980 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 2303892127A70D6C004DC980 /* Alamofire */; };
+		2303892627A7161A004DC980 /* MovieAPIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2303892527A7161A004DC980 /* MovieAPIError.swift */; };
+		2303892827A71711004DC980 /* Genre.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2303892727A71711004DC980 /* Genre.swift */; };
+		2303892A27A72306004DC980 /* SimilarMoviesList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2303892927A72306004DC980 /* SimilarMoviesList.swift */; };
+		2303892E27A84CEA004DC980 /* CustomBackButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2303892D27A84CEA004DC980 /* CustomBackButtonView.swift */; };
+		2303893527A89EAC004DC980 /* Movie+CodingKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2303893427A89EAC004DC980 /* Movie+CodingKeys.swift */; };
+		2303893727A89EDD004DC980 /* SimilarMovies+CodingKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2303893627A89EDD004DC980 /* SimilarMovies+CodingKeys.swift */; };
 		2358615427A5909B008985D9 /* DesafioMobile2YouApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2358615327A5909B008985D9 /* DesafioMobile2YouApp.swift */; };
 		2358615627A5909B008985D9 /* MovieDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2358615527A5909B008985D9 /* MovieDetailsView.swift */; };
 		2358615827A5909D008985D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2358615727A5909D008985D9 /* Assets.xcassets */; };
 		2358615B27A5909D008985D9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2358615A27A5909D008985D9 /* Preview Assets.xcassets */; };
-		2358616527A5909D008985D9 /* DesafioMobile2YouTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2358616427A5909D008985D9 /* DesafioMobile2YouTests.swift */; };
+		2358616527A5909D008985D9 /* APIMovieTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2358616427A5909D008985D9 /* APIMovieTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		2358616127A5909D008985D9 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 2358614827A5909B008985D9 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 2358614F27A5909B008985D9;
-			remoteInfo = DesafioMobile2You;
-		};
-		2358616B27A5909D008985D9 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 2358614827A5909B008985D9 /* Project object */;
 			proxyType = 1;
@@ -38,14 +42,23 @@
 		2303890327A5A51C004DC980 /* MovieDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailsViewModel.swift; sourceTree = "<group>"; };
 		2303890727A5A598004DC980 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 		2303890A27A5A5E6004DC980 /* MovieAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieAPI.swift; sourceTree = "<group>"; };
+		2303891627A5E514004DC980 /* HeaderImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderImageView.swift; sourceTree = "<group>"; };
+		2303891927A5EB5F004DC980 /* MovieInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieInfoView.swift; sourceTree = "<group>"; };
+		2303891C27A6FB2A004DC980 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		2303891E27A6FC0C004DC980 /* ListRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRowView.swift; sourceTree = "<group>"; };
+		2303892527A7161A004DC980 /* MovieAPIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieAPIError.swift; sourceTree = "<group>"; };
+		2303892727A71711004DC980 /* Genre.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Genre.swift; sourceTree = "<group>"; };
+		2303892927A72306004DC980 /* SimilarMoviesList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimilarMoviesList.swift; sourceTree = "<group>"; };
+		2303892D27A84CEA004DC980 /* CustomBackButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomBackButtonView.swift; sourceTree = "<group>"; };
+		2303893427A89EAC004DC980 /* Movie+CodingKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Movie+CodingKeys.swift"; sourceTree = "<group>"; };
+		2303893627A89EDD004DC980 /* SimilarMovies+CodingKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SimilarMovies+CodingKeys.swift"; sourceTree = "<group>"; };
 		2358615027A5909B008985D9 /* DesafioMobile2You.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DesafioMobile2You.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2358615327A5909B008985D9 /* DesafioMobile2YouApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesafioMobile2YouApp.swift; sourceTree = "<group>"; };
 		2358615527A5909B008985D9 /* MovieDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailsView.swift; sourceTree = "<group>"; };
 		2358615727A5909D008985D9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2358615A27A5909D008985D9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		2358616027A5909D008985D9 /* DesafioMobile2YouTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DesafioMobile2YouTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		2358616427A5909D008985D9 /* DesafioMobile2YouTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesafioMobile2YouTests.swift; sourceTree = "<group>"; };
-		2358616A27A5909D008985D9 /* DesafioMobile2YouUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DesafioMobile2YouUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2358616427A5909D008985D9 /* APIMovieTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIMovieTests.swift; sourceTree = "<group>"; };
 		2358617D27A59112008985D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -54,17 +67,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2303892227A70D6C004DC980 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		2358615D27A5909D008985D9 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		2358616727A5909D008985D9 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -85,7 +92,8 @@
 		2303890027A59D0C004DC980 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				2358615527A5909B008985D9 /* MovieDetailsView.swift */,
+				2303891B27A6C4B9004DC980 /* MovieDetails */,
+				2303891827A5EB36004DC980 /* Shared */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -102,6 +110,9 @@
 			isa = PBXGroup;
 			children = (
 				2303890727A5A598004DC980 /* Movie.swift */,
+				2303892727A71711004DC980 /* Genre.swift */,
+				2303892927A72306004DC980 /* SimilarMoviesList.swift */,
+				2303890227A5A4E6004DC980 /* ViewModel */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -112,6 +123,52 @@
 				2303890A27A5A5E6004DC980 /* MovieAPI.swift */,
 			);
 			path = Network;
+			sourceTree = "<group>";
+		};
+		2303890F27A5D0F0004DC980 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				2303893427A89EAC004DC980 /* Movie+CodingKeys.swift */,
+				2303893627A89EDD004DC980 /* SimilarMovies+CodingKeys.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		2303891827A5EB36004DC980 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				2303891627A5E514004DC980 /* HeaderImageView.swift */,
+				2303891927A5EB5F004DC980 /* MovieInfoView.swift */,
+				2303891C27A6FB2A004DC980 /* GradientView.swift */,
+				2303891E27A6FC0C004DC980 /* ListRowView.swift */,
+				2303892D27A84CEA004DC980 /* CustomBackButtonView.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		2303891B27A6C4B9004DC980 /* MovieDetails */ = {
+			isa = PBXGroup;
+			children = (
+				2358615527A5909B008985D9 /* MovieDetailsView.swift */,
+			);
+			path = MovieDetails;
+			sourceTree = "<group>";
+		};
+		2303892327A715FE004DC980 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				2303890F27A5D0F0004DC980 /* Extensions */,
+				2303892427A7160A004DC980 /* Enums */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		2303892427A7160A004DC980 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				2303892527A7161A004DC980 /* MovieAPIError.swift */,
+			);
+			path = Enums;
 			sourceTree = "<group>";
 		};
 		2358614727A5909B008985D9 = {
@@ -128,7 +185,6 @@
 			children = (
 				2358615027A5909B008985D9 /* DesafioMobile2You.app */,
 				2358616027A5909D008985D9 /* DesafioMobile2YouTests.xctest */,
-				2358616A27A5909D008985D9 /* DesafioMobile2YouUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -136,9 +192,9 @@
 		2358615227A5909B008985D9 /* DesafioMobile2You */ = {
 			isa = PBXGroup;
 			children = (
+				2303892327A715FE004DC980 /* Utils */,
 				2303890927A5A5B6004DC980 /* Network */,
 				2303890627A5A58B004DC980 /* Model */,
-				2303890227A5A4E6004DC980 /* ViewModel */,
 				2303890027A59D0C004DC980 /* View */,
 				230388FF27A59CD3004DC980 /* Application */,
 				2358617D27A59112008985D9 /* Info.plist */,
@@ -159,7 +215,7 @@
 		2358616327A5909D008985D9 /* DesafioMobile2YouTests */ = {
 			isa = PBXGroup;
 			children = (
-				2358616427A5909D008985D9 /* DesafioMobile2YouTests.swift */,
+				2358616427A5909D008985D9 /* APIMovieTests.swift */,
 			);
 			path = DesafioMobile2YouTests;
 			sourceTree = "<group>";
@@ -180,6 +236,9 @@
 			dependencies = (
 			);
 			name = DesafioMobile2You;
+			packageProductDependencies = (
+				2303892127A70D6C004DC980 /* Alamofire */,
+			);
 			productName = DesafioMobile2You;
 			productReference = 2358615027A5909B008985D9 /* DesafioMobile2You.app */;
 			productType = "com.apple.product-type.application";
@@ -202,24 +261,6 @@
 			productReference = 2358616027A5909D008985D9 /* DesafioMobile2YouTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		2358616927A5909D008985D9 /* DesafioMobile2YouUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 2358617A27A5909D008985D9 /* Build configuration list for PBXNativeTarget "DesafioMobile2YouUITests" */;
-			buildPhases = (
-				2358616627A5909D008985D9 /* Sources */,
-				2358616727A5909D008985D9 /* Frameworks */,
-				2358616827A5909D008985D9 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				2358616C27A5909D008985D9 /* PBXTargetDependency */,
-			);
-			name = DesafioMobile2YouUITests;
-			productName = DesafioMobile2YouUITests;
-			productReference = 2358616A27A5909D008985D9 /* DesafioMobile2YouUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -237,10 +278,6 @@
 						CreatedOnToolsVersion = 13.2.1;
 						TestTargetID = 2358614F27A5909B008985D9;
 					};
-					2358616927A5909D008985D9 = {
-						CreatedOnToolsVersion = 13.2.1;
-						TestTargetID = 2358614F27A5909B008985D9;
-					};
 				};
 			};
 			buildConfigurationList = 2358614B27A5909B008985D9 /* Build configuration list for PBXProject "DesafioMobile2You" */;
@@ -252,13 +289,15 @@
 				Base,
 			);
 			mainGroup = 2358614727A5909B008985D9;
+			packageReferences = (
+				2303892027A70D6C004DC980 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = 2358615127A5909B008985D9 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				2358614F27A5909B008985D9 /* DesafioMobile2You */,
 				2358615F27A5909D008985D9 /* DesafioMobile2YouTests */,
-				2358616927A5909D008985D9 /* DesafioMobile2YouUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -280,13 +319,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2358616827A5909D008985D9 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -296,9 +328,19 @@
 			files = (
 				2358615627A5909B008985D9 /* MovieDetailsView.swift in Sources */,
 				2358615427A5909B008985D9 /* DesafioMobile2YouApp.swift in Sources */,
+				2303893527A89EAC004DC980 /* Movie+CodingKeys.swift in Sources */,
+				2303892A27A72306004DC980 /* SimilarMoviesList.swift in Sources */,
 				2303890827A5A598004DC980 /* Movie.swift in Sources */,
+				2303892827A71711004DC980 /* Genre.swift in Sources */,
+				2303891727A5E514004DC980 /* HeaderImageView.swift in Sources */,
+				2303892627A7161A004DC980 /* MovieAPIError.swift in Sources */,
+				2303893727A89EDD004DC980 /* SimilarMovies+CodingKeys.swift in Sources */,
+				2303891F27A6FC0C004DC980 /* ListRowView.swift in Sources */,
 				2303890427A5A51C004DC980 /* MovieDetailsViewModel.swift in Sources */,
+				2303891A27A5EB5F004DC980 /* MovieInfoView.swift in Sources */,
+				2303892E27A84CEA004DC980 /* CustomBackButtonView.swift in Sources */,
 				2303890B27A5A5E6004DC980 /* MovieAPI.swift in Sources */,
+				2303891D27A6FB2A004DC980 /* GradientView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -306,14 +348,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2358616527A5909D008985D9 /* DesafioMobile2YouTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		2358616627A5909D008985D9 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				2358616527A5909D008985D9 /* APIMovieTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -324,11 +359,6 @@
 			isa = PBXTargetDependency;
 			target = 2358614F27A5909B008985D9 /* DesafioMobile2You */;
 			targetProxy = 2358616127A5909D008985D9 /* PBXContainerItemProxy */;
-		};
-		2358616C27A5909D008985D9 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 2358614F27A5909B008985D9 /* DesafioMobile2You */;
-			targetProxy = 2358616B27A5909D008985D9 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -384,7 +414,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -439,7 +469,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -547,42 +577,6 @@
 			};
 			name = Release;
 		};
-		2358617B27A5909D008985D9 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 272983AP33;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = desafiomobile2you.com.igorsilva.DesafioMobile2YouUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = DesafioMobile2You;
-			};
-			name = Debug;
-		};
-		2358617C27A5909D008985D9 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 272983AP33;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = desafiomobile2you.com.igorsilva.DesafioMobile2YouUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = DesafioMobile2You;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -613,16 +607,26 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2358617A27A5909D008985D9 /* Build configuration list for PBXNativeTarget "DesafioMobile2YouUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				2358617B27A5909D008985D9 /* Debug */,
-				2358617C27A5909D008985D9 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		2303892027A70D6C004DC980 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2303892127A70D6C004DC980 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2303892027A70D6C004DC980 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 2358614827A5909B008985D9 /* Project object */;
 }
