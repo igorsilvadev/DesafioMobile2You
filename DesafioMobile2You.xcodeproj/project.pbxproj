@@ -24,18 +24,11 @@
 		2358615627A5909B008985D9 /* MovieDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2358615527A5909B008985D9 /* MovieDetailsView.swift */; };
 		2358615827A5909D008985D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2358615727A5909D008985D9 /* Assets.xcassets */; };
 		2358615B27A5909D008985D9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2358615A27A5909D008985D9 /* Preview Assets.xcassets */; };
-		2358616527A5909D008985D9 /* DesafioMobile2YouTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2358616427A5909D008985D9 /* DesafioMobile2YouTests.swift */; };
+		2358616527A5909D008985D9 /* APIMovieTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2358616427A5909D008985D9 /* APIMovieTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		2358616127A5909D008985D9 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 2358614827A5909B008985D9 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 2358614F27A5909B008985D9;
-			remoteInfo = DesafioMobile2You;
-		};
-		2358616B27A5909D008985D9 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 2358614827A5909B008985D9 /* Project object */;
 			proxyType = 1;
@@ -63,8 +56,7 @@
 		2358615727A5909D008985D9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2358615A27A5909D008985D9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		2358616027A5909D008985D9 /* DesafioMobile2YouTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DesafioMobile2YouTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		2358616427A5909D008985D9 /* DesafioMobile2YouTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesafioMobile2YouTests.swift; sourceTree = "<group>"; };
-		2358616A27A5909D008985D9 /* DesafioMobile2YouUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DesafioMobile2YouUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2358616427A5909D008985D9 /* APIMovieTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIMovieTests.swift; sourceTree = "<group>"; };
 		2358617D27A59112008985D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -78,13 +70,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		2358615D27A5909D008985D9 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		2358616727A5909D008985D9 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -197,7 +182,6 @@
 			children = (
 				2358615027A5909B008985D9 /* DesafioMobile2You.app */,
 				2358616027A5909D008985D9 /* DesafioMobile2YouTests.xctest */,
-				2358616A27A5909D008985D9 /* DesafioMobile2YouUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -228,7 +212,7 @@
 		2358616327A5909D008985D9 /* DesafioMobile2YouTests */ = {
 			isa = PBXGroup;
 			children = (
-				2358616427A5909D008985D9 /* DesafioMobile2YouTests.swift */,
+				2358616427A5909D008985D9 /* APIMovieTests.swift */,
 			);
 			path = DesafioMobile2YouTests;
 			sourceTree = "<group>";
@@ -274,24 +258,6 @@
 			productReference = 2358616027A5909D008985D9 /* DesafioMobile2YouTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		2358616927A5909D008985D9 /* DesafioMobile2YouUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 2358617A27A5909D008985D9 /* Build configuration list for PBXNativeTarget "DesafioMobile2YouUITests" */;
-			buildPhases = (
-				2358616627A5909D008985D9 /* Sources */,
-				2358616727A5909D008985D9 /* Frameworks */,
-				2358616827A5909D008985D9 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				2358616C27A5909D008985D9 /* PBXTargetDependency */,
-			);
-			name = DesafioMobile2YouUITests;
-			productName = DesafioMobile2YouUITests;
-			productReference = 2358616A27A5909D008985D9 /* DesafioMobile2YouUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -306,10 +272,6 @@
 						CreatedOnToolsVersion = 13.2.1;
 					};
 					2358615F27A5909D008985D9 = {
-						CreatedOnToolsVersion = 13.2.1;
-						TestTargetID = 2358614F27A5909B008985D9;
-					};
-					2358616927A5909D008985D9 = {
 						CreatedOnToolsVersion = 13.2.1;
 						TestTargetID = 2358614F27A5909B008985D9;
 					};
@@ -333,7 +295,6 @@
 			targets = (
 				2358614F27A5909B008985D9 /* DesafioMobile2You */,
 				2358615F27A5909D008985D9 /* DesafioMobile2YouTests */,
-				2358616927A5909D008985D9 /* DesafioMobile2YouUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -349,13 +310,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		2358615E27A5909D008985D9 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		2358616827A5909D008985D9 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -390,14 +344,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2358616527A5909D008985D9 /* DesafioMobile2YouTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		2358616627A5909D008985D9 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				2358616527A5909D008985D9 /* APIMovieTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -408,11 +355,6 @@
 			isa = PBXTargetDependency;
 			target = 2358614F27A5909B008985D9 /* DesafioMobile2You */;
 			targetProxy = 2358616127A5909D008985D9 /* PBXContainerItemProxy */;
-		};
-		2358616C27A5909D008985D9 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 2358614F27A5909B008985D9 /* DesafioMobile2You */;
-			targetProxy = 2358616B27A5909D008985D9 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -468,7 +410,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -523,7 +465,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -631,42 +573,6 @@
 			};
 			name = Release;
 		};
-		2358617B27A5909D008985D9 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 272983AP33;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = desafiomobile2you.com.igorsilva.DesafioMobile2YouUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = DesafioMobile2You;
-			};
-			name = Debug;
-		};
-		2358617C27A5909D008985D9 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 272983AP33;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = desafiomobile2you.com.igorsilva.DesafioMobile2YouUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = DesafioMobile2You;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -693,15 +599,6 @@
 			buildConfigurations = (
 				2358617827A5909D008985D9 /* Debug */,
 				2358617927A5909D008985D9 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		2358617A27A5909D008985D9 /* Build configuration list for PBXNativeTarget "DesafioMobile2YouUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				2358617B27A5909D008985D9 /* Debug */,
-				2358617C27A5909D008985D9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

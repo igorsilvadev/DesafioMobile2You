@@ -21,7 +21,7 @@ class MovieDetailsViewModel: ObservableObject {
     
     private func getMovie(id: Int) {
         let urlComplete = "https://api.themoviedb.org/3/movie/\(id)?api_key=c3a646ab5cf74a4e7af99be51584463b"
-        MovieAPI.shared.request(url: urlComplete) { [weak self] (result: Result<Movie, Error>) in
+        MovieAPI.shared.request(url: urlComplete) { [weak self] (result: Result<Movie, MovieAPIError>) in
             switch result {
             case .success(let movie):
                 self?.movie = movie
@@ -33,7 +33,7 @@ class MovieDetailsViewModel: ObservableObject {
     
     private func getSimilarMovies(id: Int) {
         let urlComplete = "https://api.themoviedb.org/3/movie/\(id)/similar?api_key=c3a646ab5cf74a4e7af99be51584463b&language=en-US&page=1"
-        MovieAPI.shared.request(url: urlComplete) { [weak self] (result: Result<SimilarMoviesList, Error>) in
+        MovieAPI.shared.request(url: urlComplete) { [weak self] (result: Result<SimilarMoviesList, MovieAPIError>) in
             switch result {
             case .success(let list):
                 self?.similarMovies = list.movies
@@ -46,20 +46,18 @@ class MovieDetailsViewModel: ObservableObject {
     
     private func getGenres() {
         let urlComplete = "https://api.themoviedb.org/3/genre/movie/list?api_key=c3a646ab5cf74a4e7af99be51584463b&language=en-US"
-        MovieAPI.shared.request(url: urlComplete) { (result: Result<GenresList, Error>) in
+        MovieAPI.shared.request(url: urlComplete) { [weak self] (result: Result<GenresList, MovieAPIError>) in
             switch result {
             case .success(let list):
                 list.genres.forEach { genre in
-                    self.genreList[genre.id] = genre.name
+                    self?.genreList[genre.id] = genre.name
                 }
-                self.objectWillChange.send()
+                self?.objectWillChange.send()
             case .failure:
                 break
             }
         }
     }
-    
-    
     
     func getFormattedGenres(ids: [Int]) -> String {
         if genreList.isEmpty {
