@@ -23,6 +23,7 @@ struct ListRowView: View {
                     .frame(width: 60)
             } placeholder: {
                 ZStack {
+                    //MARK: Black Placeholder Shape
                     Rectangle()
                         .foregroundColor(.black)
                         .frame(width: 60)

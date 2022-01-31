@@ -7,6 +7,7 @@
 
 import Foundation
 
+/// Classe Model para fornecer os dados da MovieDetailsView
 class MovieDetailsViewModel: ObservableObject {
     
     @Published var movie: Movie?
@@ -19,6 +20,8 @@ class MovieDetailsViewModel: ObservableObject {
         self.getGenres()
     }
     
+    /// Método que armazena o filme na váriável *movie* da MovieDetailsViewModel
+    /// - Parameter id: ID do filme que será buscado
     private func getMovie(id: Int) {
         let urlComplete = "https://api.themoviedb.org/3/movie/\(id)?api_key=c3a646ab5cf74a4e7af99be51584463b"
         MovieAPI.shared.request(url: urlComplete) { [weak self] (result: Result<Movie, MovieAPIError>) in
@@ -31,6 +34,8 @@ class MovieDetailsViewModel: ObservableObject {
         }
     }
     
+    /// Método que armazena os filmes similares na váriável *similarMovies* da MovieDetailsViewModel
+    /// - Parameter id: ID do filme que será buscado
     private func getSimilarMovies(id: Int) {
         let urlComplete = "https://api.themoviedb.org/3/movie/\(id)/similar?api_key=c3a646ab5cf74a4e7af99be51584463b&language=en-US&page=1"
         MovieAPI.shared.request(url: urlComplete) { [weak self] (result: Result<SimilarMoviesList, MovieAPIError>) in
@@ -44,6 +49,7 @@ class MovieDetailsViewModel: ObservableObject {
     }
     
     
+    ///Método que armazena um dicionário com o ID como Key e Name como value na váriável *genreList* da MovieDetailsViewModel
     private func getGenres() {
         let urlComplete = "https://api.themoviedb.org/3/genre/movie/list?api_key=c3a646ab5cf74a4e7af99be51584463b&language=en-US"
         MovieAPI.shared.request(url: urlComplete) { [weak self] (result: Result<GenresList, MovieAPIError>) in
@@ -59,6 +65,9 @@ class MovieDetailsViewModel: ObservableObject {
         }
     }
     
+    /// Método que formatar uma string com os gêneros
+    /// - Parameter ids: Ids que são usados para criar uma String formatada
+    /// - Returns: Uma String contendo a lista de gêneros formatada
     func getFormattedGenres(ids: [Int]) -> String {
         if genreList.isEmpty {
             getGenres()
@@ -67,6 +76,7 @@ class MovieDetailsViewModel: ObservableObject {
             ids.forEach { id in
                 formatedGenres.append(genreList[id] ?? "")
             }
+        //Adiciona vírgulas entre os gêneros
         return formatedGenres.joined(separator: ", ")
     }
     

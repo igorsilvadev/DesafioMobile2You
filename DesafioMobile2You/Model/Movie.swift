@@ -20,14 +20,4 @@ struct Movie: Decodable {
 }
 
 
-extension Movie {
-    enum CodingKeys: String, CodingKey {
-        case id = "id"
-        case title = "title"
-        case popularity = "popularity"
-        case voteCount = "vote_count"
-        case date = "release_date"
-        case posterPath = "poster_path"
-        case genres = "genres"
-    }
-}
+

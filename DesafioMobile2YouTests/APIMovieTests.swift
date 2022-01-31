@@ -18,7 +18,9 @@ class APIMovieTests: XCTestCase {
         
         MovieAPI.shared.request(url: urlEndPoint) { (result: Result<Movie, MovieAPIError>) in
             switch result {
+            
                 case .success(let resultMovie):
+                //Verifica se o resultado é igual ao filme solicitado
                     XCTAssertTrue(resultMovie.id == 550, "Different Movie ID")
                     XCTAssertTrue(resultMovie.title == "Fight Club", "Different Movie Title")
                     expectation.fulfill()
@@ -43,6 +45,7 @@ class APIMovieTests: XCTestCase {
             
             switch result {
                 case .success:
+                //Completa o teste caso não ocorra erro no request da API
                     expectation.fulfill()
                 case .failure:
                     XCTFail("API result Error")
@@ -64,6 +67,7 @@ class APIMovieTests: XCTestCase {
             
             switch result {
                 case .success:
+                //Completa o teste caso não ocorra erro no request da API
                     expectation.fulfill()
                 case .failure:
                     XCTFail("API result Error")

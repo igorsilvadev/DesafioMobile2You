@@ -10,7 +10,6 @@
 		2303890427A5A51C004DC980 /* MovieDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2303890327A5A51C004DC980 /* MovieDetailsViewModel.swift */; };
 		2303890827A5A598004DC980 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2303890727A5A598004DC980 /* Movie.swift */; };
 		2303890B27A5A5E6004DC980 /* MovieAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2303890A27A5A5E6004DC980 /* MovieAPI.swift */; };
-		2303891327A5D729004DC980 /* String+LoadUIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2303891227A5D729004DC980 /* String+LoadUIImage.swift */; };
 		2303891727A5E514004DC980 /* HeaderImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2303891627A5E514004DC980 /* HeaderImageView.swift */; };
 		2303891A27A5EB5F004DC980 /* MovieInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2303891927A5EB5F004DC980 /* MovieInfoView.swift */; };
 		2303891D27A6FB2A004DC980 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2303891C27A6FB2A004DC980 /* GradientView.swift */; };
@@ -20,6 +19,8 @@
 		2303892827A71711004DC980 /* Genre.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2303892727A71711004DC980 /* Genre.swift */; };
 		2303892A27A72306004DC980 /* SimilarMoviesList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2303892927A72306004DC980 /* SimilarMoviesList.swift */; };
 		2303892E27A84CEA004DC980 /* CustomBackButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2303892D27A84CEA004DC980 /* CustomBackButtonView.swift */; };
+		2303893527A89EAC004DC980 /* Movie+CodingKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2303893427A89EAC004DC980 /* Movie+CodingKeys.swift */; };
+		2303893727A89EDD004DC980 /* SimilarMovies+CodingKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2303893627A89EDD004DC980 /* SimilarMovies+CodingKeys.swift */; };
 		2358615427A5909B008985D9 /* DesafioMobile2YouApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2358615327A5909B008985D9 /* DesafioMobile2YouApp.swift */; };
 		2358615627A5909B008985D9 /* MovieDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2358615527A5909B008985D9 /* MovieDetailsView.swift */; };
 		2358615827A5909D008985D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2358615727A5909D008985D9 /* Assets.xcassets */; };
@@ -41,7 +42,6 @@
 		2303890327A5A51C004DC980 /* MovieDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailsViewModel.swift; sourceTree = "<group>"; };
 		2303890727A5A598004DC980 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 		2303890A27A5A5E6004DC980 /* MovieAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieAPI.swift; sourceTree = "<group>"; };
-		2303891227A5D729004DC980 /* String+LoadUIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+LoadUIImage.swift"; sourceTree = "<group>"; };
 		2303891627A5E514004DC980 /* HeaderImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderImageView.swift; sourceTree = "<group>"; };
 		2303891927A5EB5F004DC980 /* MovieInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieInfoView.swift; sourceTree = "<group>"; };
 		2303891C27A6FB2A004DC980 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
@@ -50,6 +50,8 @@
 		2303892727A71711004DC980 /* Genre.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Genre.swift; sourceTree = "<group>"; };
 		2303892927A72306004DC980 /* SimilarMoviesList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimilarMoviesList.swift; sourceTree = "<group>"; };
 		2303892D27A84CEA004DC980 /* CustomBackButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomBackButtonView.swift; sourceTree = "<group>"; };
+		2303893427A89EAC004DC980 /* Movie+CodingKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Movie+CodingKeys.swift"; sourceTree = "<group>"; };
+		2303893627A89EDD004DC980 /* SimilarMovies+CodingKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SimilarMovies+CodingKeys.swift"; sourceTree = "<group>"; };
 		2358615027A5909B008985D9 /* DesafioMobile2You.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DesafioMobile2You.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2358615327A5909B008985D9 /* DesafioMobile2YouApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesafioMobile2YouApp.swift; sourceTree = "<group>"; };
 		2358615527A5909B008985D9 /* MovieDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailsView.swift; sourceTree = "<group>"; };
@@ -126,7 +128,8 @@
 		2303890F27A5D0F0004DC980 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				2303891227A5D729004DC980 /* String+LoadUIImage.swift */,
+				2303893427A89EAC004DC980 /* Movie+CodingKeys.swift */,
+				2303893627A89EDD004DC980 /* SimilarMovies+CodingKeys.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -325,15 +328,16 @@
 			files = (
 				2358615627A5909B008985D9 /* MovieDetailsView.swift in Sources */,
 				2358615427A5909B008985D9 /* DesafioMobile2YouApp.swift in Sources */,
+				2303893527A89EAC004DC980 /* Movie+CodingKeys.swift in Sources */,
 				2303892A27A72306004DC980 /* SimilarMoviesList.swift in Sources */,
 				2303890827A5A598004DC980 /* Movie.swift in Sources */,
 				2303892827A71711004DC980 /* Genre.swift in Sources */,
 				2303891727A5E514004DC980 /* HeaderImageView.swift in Sources */,
 				2303892627A7161A004DC980 /* MovieAPIError.swift in Sources */,
+				2303893727A89EDD004DC980 /* SimilarMovies+CodingKeys.swift in Sources */,
 				2303891F27A6FC0C004DC980 /* ListRowView.swift in Sources */,
 				2303890427A5A51C004DC980 /* MovieDetailsViewModel.swift in Sources */,
 				2303891A27A5EB5F004DC980 /* MovieInfoView.swift in Sources */,
-				2303891327A5D729004DC980 /* String+LoadUIImage.swift in Sources */,
 				2303892E27A84CEA004DC980 /* CustomBackButtonView.swift in Sources */,
 				2303890B27A5A5E6004DC980 /* MovieAPI.swift in Sources */,
 				2303891D27A6FB2A004DC980 /* GradientView.swift in Sources */,

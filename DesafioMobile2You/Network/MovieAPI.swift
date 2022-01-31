@@ -12,6 +12,9 @@ class MovieAPI {
     
     static let shared = MovieAPI()
     
+    /// Método que faz o request GET do tipo fornecido no return type
+    /// - Parameter url: A URL completa para o request
+    /// - Returns: retorna um Result<T,MovieAPIError>
     func request<T: Decodable>(url: String, completion: @escaping (Result<T, MovieAPIError>) -> Void) {
         
         AF.request(url, method: .get).responseDecodable { (response : DataResponse<T, AFError>) in

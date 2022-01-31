@@ -15,17 +15,16 @@ struct CustomBackButtonView: View {
                 Button {
                     presentationMode.wrappedValue.dismiss()
                 } label: {
-                        Image(systemName: "chevron.backward.circle.fill")
-                            .resizable()
-                            .frame(width: 30, height: 30)
-                            .foregroundColor(.black)
-                            .background(Circle()
-                                            .frame(width: 27, height: 27)
-                                            .foregroundColor(.white))
-                            .padding(.leading)
-                           
-                    }
-                    
+                    Image(systemName: "chevron.backward.circle.fill")
+                        .resizable()
+                        .frame(width: 30, height: 30)
+                        .foregroundColor(.black)
+                        .background(Circle()
+                                        .frame(width: 27, height: 27)
+                                        .foregroundColor(.white))
+                        .padding(.leading)
+                }
+                
                 Spacer()
             }
             Rectangle()

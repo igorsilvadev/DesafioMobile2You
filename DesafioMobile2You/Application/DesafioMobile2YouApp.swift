@@ -12,7 +12,7 @@ struct DesafioMobile2YouApp: App {
     var body: some Scene {
         WindowGroup {
             NavigationView {
-                MovieDetailsView(withId: 550)
+                MovieDetailsView(withId: 157336)
                     .preferredColorScheme(.dark)
             }
 

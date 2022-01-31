@@ -39,6 +39,7 @@ struct HeaderImageView: View {
                         .progressViewStyle(.circular)
                         .padding(.top)
                 }
+                //Gradient preto abaixo da imagem
                 GradientView()
             }
         }

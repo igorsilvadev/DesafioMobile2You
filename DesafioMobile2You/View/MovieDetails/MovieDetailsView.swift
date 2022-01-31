@@ -17,19 +17,25 @@ struct MovieDetailsView: View {
     }
     
     var body: some View {
+        
         ZStack {
+            
             ScrollView (showsIndicators: false){
+                
                 //MARK: HEADER
                 HeaderImageView(posterPath: viewModel.movie?.posterPath ?? "")
+                
                 //MARK: Movie Infos
                 MovieInfoView(title: viewModel.movie?.title ?? "No Title", voteCount: viewModel.movie?.voteCount ?? 0, popularity: viewModel.movie?.popularity ?? 0.0)
                     .padding(.leading, 5)
-                //MARK: Similar Movies
+                
+                //MARK: Similar Movies LIST
                 ForEach(viewModel.similarMovies ?? []) { movie in
                     
                     NavigationLink {
                         MovieDetailsView(withId: movie.id)
                     } label: {
+                        //MARK: Movie Row
                         ListRowView(posterPath: movie.posterPath ?? "", title: movie.title, year: String(movie.date.prefix(4)), genres: viewModel.getFormattedGenres(ids: movie.genres))
                         Divider()
                             .foregroundColor(.gray)
@@ -44,6 +50,7 @@ struct MovieDetailsView: View {
             .edgesIgnoringSafeArea(.top)
             .navigationBarHidden(true)
             .navigationBarBackButtonHidden(true)
+            //MARK: BackButton
             CustomBackButtonView()
         }
     }

@@ -39,6 +39,7 @@ struct MovieInfoView: View {
             HStack {
                 //Likes
                 Image(systemName: "suit.heart.fill")
+                //Formata o números de likes baseado na condição do operador ternário
                 Text(voteCount > 1000 ? String(format: "%.1fK Likes",Double(voteCount)/1000) : "\(voteCount) Likes")
                     .font(.system(size: 14))
                 

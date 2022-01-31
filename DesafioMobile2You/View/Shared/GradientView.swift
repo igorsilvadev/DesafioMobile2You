@@ -12,6 +12,7 @@ struct GradientView: View {
         Rectangle()
             .foregroundColor(.clear)
             .background(LinearGradient(gradient: Gradient(colors: [.clear, .black]), startPoint: .top, endPoint: .bottom))
+            .opacity(0.95)
     }
 }
 

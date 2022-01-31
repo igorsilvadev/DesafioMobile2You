@@ -12,13 +12,6 @@ struct SimilarMoviesList: Decodable {
     let movies: [SimilarMovie]
 }
 
-extension SimilarMoviesList {
-    enum CodingKeys: String, CodingKey {
-        case movies = "results"
-    }
-}
-
-
 struct SimilarMovie: Decodable, Identifiable {
     let id: Int
     let title: String
@@ -30,14 +23,3 @@ struct SimilarMovie: Decodable, Identifiable {
 }
 
 
-extension SimilarMovie {
-    enum CodingKeys: String, CodingKey {
-        case id = "id"
-        case title = "title"
-        case posterPath = "poster_path"
-        case popularity = "popularity"
-        case genres = "genre_ids"
-        case date = "release_date"
-        case voteCount = "vote_count"
-    }
-}
