@@ -29,19 +29,23 @@ struct MovieInfoView: View {
                     isFavorite.toggle()
                 } label: {
                     Image(systemName: isFavorite ? "suit.heart.fill" : "suit.heart")
+                        .resizable()
+                        .frame(width: 20, height: 20)
                         .foregroundColor(.primary)
                 }
+                .padding(.trailing)
             }
             //MARK: Movie Likes and Views
             HStack {
                 //Likes
                 Image(systemName: "suit.heart.fill")
-                Text("\(voteCount) Likes")
+                Text(voteCount > 1000 ? String(format: "%.1fK Likes",Double(voteCount)/1000) : "\(voteCount) Likes")
                     .font(.system(size: 14))
+                
                 //Popularity
                 Image(systemName: "play.tv.fill")
                     .padding(.leading)
-                Text("\(popularity) Views")
+                Text(String(format: "%.3f Views", popularity))
                     .font(.system(size: 14))
                 Spacer()
             }
@@ -51,6 +55,6 @@ struct MovieInfoView: View {
 
 struct MovieInfoView_Previews: PreviewProvider {
     static var previews: some View {
-        MovieInfoView(title: "The Very Best Of Johnny Depp", voteCount: 1200, popularity: 100.000)
+        MovieInfoView(title: "The Very Best Of Johnny Depp", voteCount: 1200, popularity: 54.400)
     }
 }
