@@ -22,8 +22,13 @@ struct ListRowView: View {
                     .resizable()
                     .frame(width: 60)
             } placeholder: {
-               ProgressView()
-                    .progressViewStyle(.circular)
+                ZStack {
+                    Rectangle()
+                        .foregroundColor(.black)
+                        .frame(width: 60)
+                    ProgressView()
+                         .progressViewStyle(.circular)
+                }
             }
             
             
@@ -31,6 +36,8 @@ struct ListRowView: View {
             VStack(alignment: .leading){
                 Text(title)
                     .bold()
+                    .multilineTextAlignment(.leading)
+                    
                 HStack {
                     Text(year)
                     Text(genres)
