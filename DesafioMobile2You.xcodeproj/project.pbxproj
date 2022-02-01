@@ -112,7 +112,6 @@
 				2303890727A5A598004DC980 /* Movie.swift */,
 				2303892727A71711004DC980 /* Genre.swift */,
 				2303892927A72306004DC980 /* SimilarMoviesList.swift */,
-				2303890227A5A4E6004DC980 /* ViewModel */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -192,6 +191,7 @@
 		2358615227A5909B008985D9 /* DesafioMobile2You */ = {
 			isa = PBXGroup;
 			children = (
+				2303890227A5A4E6004DC980 /* ViewModel */,
 				2303892327A715FE004DC980 /* Utils */,
 				2303890927A5A5B6004DC980 /* Network */,
 				2303890627A5A58B004DC980 /* Model */,
