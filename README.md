@@ -1,11 +1,14 @@
 
 # Desafio Mobile2You
 
-Replicação do layout da tela de detalhe dos filmes do app TodoMovies
+Replicação do layout da tela de detalhe dos filmes do app TodoMovies4
 
 
 ## Observações 
-- A branch mais atualizada é a **[main]** 
+- A branch mais atualizada é a **[main]**
+- O botão de voltar no topo é uma reprodução da imagem de replicação  
+- É possível clicar em um filme da lista e ir para o próximo filme 
+- O botão de voltar permite o retorno para o filme anterior 
 - O design pattern é o MVVM
 - Criei tests para validar o request da api 
 - A documentação foi feita em português para facilitar a avaliação 
