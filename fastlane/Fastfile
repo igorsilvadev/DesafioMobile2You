@@ -59,7 +59,7 @@ platform :ios do
 
     gym(
       configuration: "Release",
-      workspace: "DesafioMobile2You.xcworkspace",
+      project: "DesafioMobile2You.xcodeproj",
       scheme: "DesafioMobile2You",
       export_method: "app-store",
       export_options: {
